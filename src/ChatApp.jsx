@@ -1,9 +1,14 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import "./App.css";
 
 export default function ChatApp() {
+  const location = useLocation();
+  const params = new URLSearchParams(location.search);
+  const nome = params.get("nome") || "visitante";
+
   const [mensagens, setMensagens] = useState([
-    { texto: "Olá! Como posso te ajudar hoje?", tipo: "received" },
+    { texto: `Olá ${nome}! Como posso te ajudar hoje?`, tipo: "received" },
   ]);
   const [entrada, setEntrada] = useState("");
 
