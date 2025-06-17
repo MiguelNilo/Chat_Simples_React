@@ -1,0 +1,152 @@
+body {
+  background-color: #658bdd;
+  font-family: Arial, sans-serif;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.chat-box {
+  width: 350px;
+  height: 500px;
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.514) 75%,
+    rgba(0, 110, 255, 0.322)
+  );
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 5px white solid;
+  box-shadow: 7px 7px 7px rgba(2, 18, 41, 0.466);
+}
+
+.title {
+  width: 100%;
+  padding: 15px;
+  background-color: #1c6be2;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.messages {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+}
+
+.message {
+  max-width: 75%;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.received {
+  background: #ffffff;
+  align-self: flex-start;
+}
+
+.sent {
+  background: #3295f1;
+  color: white;
+  align-self: flex-end;
+}
+
+.input-box {
+  display: flex;
+  border-top: 1px solid #ccc;
+  padding: 10px;
+  background: white;
+}
+
+.input-box input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.input-box button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  background: #1c6be2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.input-box button:hover {
+  background: #00aeff;
+  color: white;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #3295f1;
+}
+
+.home-box {
+  width: 300px;
+  height: 400px;
+  background: linear-gradient(135deg, #a2bce4aa 40%, #ffffffcc);
+  border-radius: 12px;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid #ffffff;
+  padding: 20px;
+  text-align: center;
+  gap: 20px;
+}
+
+.home-box h1 {
+  font-size: 22px;
+  color: #04335a;
+  margin: 0;
+}
+
+.home-box p {
+  font-size: 15px;
+  color: #333;
+}
+
+.home-box a {
+  background: #1c6be2;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: 0.2s ease-in-out;
+}
+
+.home-box a:hover {
+  background: #00aeff;
+  transform: scale(1.1);
+}
